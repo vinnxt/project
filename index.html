@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- navigasi -->
+    <header>
+        <div class="container header-inner">
+            <h1 class="logo">Toko Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="test.html">Kembali</a></li>
+                    <li><a href="kami.html">Tentang Kami</a></li>
+                    <li><a href="favorites.html">Favorit</a></li>
+                    <li><a href="cart.html" id="cartLink">Keranjang <span id="cartCount" class="cart-badge">0</span></a></li>
+                </ul>
+            </nav>
+            <form id="searchForm" class="search-form" role="search">
+                <input id="searchInput" type="search" placeholder="Cari produk..." aria-label="Cari produk">
+                <button type="submit">Cari</button>
+            </form>
+        </div>
+    </header>
+
+<!-- Produk  -->
+    <main>
+        <div class="container">
+            <h2>Daftar Produk</h2>
+            <!-- Navigasi kategori produk -->
+            <div class="categories-nav" role="navigation" aria-label="Kategori produk">
+                <button class="cat-btn active" data-cat="all">Semua</button>
+                <button class="cat-btn" data-cat="pakaian">Pakaian</button>
+                <button class="cat-btn" data-cat="elektronik">Elektronik</button>
+                <button class="cat-btn" data-cat="rumah">Alat Rumah Tangga</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product" data-id="p1" data-category="pakaian" data-price="100000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 1">
+                    <h3>Baju Sport</h3>
+                    <p>Rp 100.000</p>
+                    <a href ="https://wa.me/6285809930622"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p2" data-category="elektronik" data-price="150000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 2">
+                    <h3>Produk 2</h3>
+                    <p>Rp 150.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p3" data-category="rumah" data-price="200000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 3">
+                    <h3>Produk 3</h3>
+                    <p>Rp 200.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p4" data-category="pakaian" data-price="120000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 4">
+                    <h3>Produk 4</h3>
+                    <p>Rp 120.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p5" data-category="elektronik" data-price="180000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 5">
+                    <h3>Produk 5</h3>
+                    <p>Rp 180.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p6" data-category="rumah" data-price="250000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 6">
+                    <h3>Produk 6</h3>
+                    <p>Rp 250.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p7" data-category="pakaian" data-price="90000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 7">
+                    <h3>Produk 7</h3>
+                    <p>Rp 90.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p8" data-category="elektronik" data-price="300000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 8">
+                    <h3>Produk 8</h3>
+                    <p>Rp 300.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p9" data-category="rumah" data-price="140000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 9">
+                    <h3>Produk 9</h3>
+                    <p>Rp 140.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p10" data-category="pakaian" data-price="220000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 10">
+                    <h3>Produk 10</h3>
+                    <p>Rp 220.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p11" data-category="elektronik" data-price="160000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 11">
+                    <h3>Produk 11</h3>
+                    <p>Rp 160.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p12" data-category="rumah" data-price="280000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 12">
+                    <h3>Produk 12</h3>
+                    <p>Rp 280.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p13" data-category="pakaian" data-price="110000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 13">
+                    <h3>Produk 13</h3>
+                    <p>Rp 110.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p14" data-category="elektronik" data-price="190000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 14">
+                    <h3>Produk 14</h3>
+                    <p>Rp 190.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+                <div class="product" data-id="p15" data-category="rumah" data-price="240000" data-img="assets/tshirt1.jpg">
+                    <div class="prod-actions">
+                        <button class="icon-btn cart-btn" title="Tambah ke keranjang"><i class="bi bi-cart-plus"></i></button>
+                        <button class="icon-btn fav-btn" title="Tambah ke favorit"><i class="bi bi-heart"></i></button>
+                    </div>
+                    <img src="assets/tshirt1.jpg" alt="Produk 15">
+                    <h3>Produk 15</h3>
+                    <p>Rp 240.000</p>
+                    <a href ="#"><button>Beli Sekarang</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Toko Online</p>
+        </div>
+    </footer>
+    <script>
+        // Client-side product search + category filtering + favorites handling
+        (function(){
+            const form = document.getElementById('searchForm');
+            const input = document.getElementById('searchInput');
+            const products = Array.from(document.querySelectorAll('.product'));
+            const catButtons = Array.from(document.querySelectorAll('.cat-btn'));
+            let currentCategory = 'all';
+
+            function filterProducts(q, category){
+                const query = (q || '').trim().toLowerCase();
+                const cat = category || currentCategory || 'all';
+                let visibleCount = 0;
+                products.forEach(p => {
+                    const titleEl = p.querySelector('h3');
+                    const title = titleEl ? titleEl.textContent.trim().toLowerCase() : '';
+                    const matchesQuery = !query || title.includes(query);
+                    const prodCat = p.getAttribute('data-category') || 'all';
+                    const matchesCategory = (cat === 'all') || (prodCat === cat);
+                    const show = matchesQuery && matchesCategory;
+                    p.style.display = show ? '' : 'none';
+                    if(show) visibleCount++;
+                });
+                return visibleCount;
+            }
+
+            // category button handlers
+            catButtons.forEach(btn => {
+                btn.addEventListener('click', function(){
+                    catButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentCategory = this.dataset.cat || 'all';
+                    filterProducts(input.value, currentCategory);
+                });
+            });
+
+            // On submit, prevent navigation and filter items
+            form && form.addEventListener('submit', function(e){
+                e.preventDefault();
+                filterProducts(input.value, currentCategory);
+            });
+
+            // Live search as user types (debounced)
+            let debounceTimer = null;
+            input && input.addEventListener('input', function(){
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(()=> filterProducts(input.value, currentCategory), 200);
+            });
+
+            // Favorites: store items in localStorage under key 'favorites'
+            function getFavorites(){
+                try{ return JSON.parse(localStorage.getItem('favorites') || '[]'); }catch(e){ return []; }
+            }
+            function saveFavorites(list){ localStorage.setItem('favorites', JSON.stringify(list)); }
+
+            function isFavorited(id){ return getFavorites().some(i => i.id === id); }
+
+            // initialize fav buttons state
+            function refreshFavButtons(){
+                products.forEach(p => {
+                    const btn = p.querySelector('.fav-btn');
+                    const id = p.dataset.id;
+                    if(!btn || !id) return;
+                    if(isFavorited(id)) btn.classList.add('favorited'); else btn.classList.remove('favorited');
+                });
+            }
+
+            // handle favorite toggle
+            products.forEach(p => {
+                const fav = p.querySelector('.fav-btn');
+                if(!fav) return;
+                fav.addEventListener('click', function(e){
+                    const card = this.closest('.product');
+                    const id = card.dataset.id;
+                    const title = card.querySelector('h3')?.textContent?.trim() || '';
+                    const price = card.dataset.price || '';
+                    const img = card.dataset.img || '';
+                    let list = getFavorites();
+                    const exists = list.findIndex(x=>x.id===id);
+                    if(exists === -1){
+                        list.push({ id, title, price, img });
+                        this.classList.add('favorited');
+                    } else {
+                        list.splice(exists,1);
+                        this.classList.remove('favorited');
+                    }
+                    saveFavorites(list);
+                });
+            });
+
+            // CART: store items in localStorage under key 'cart'
+            function getCart(){ try{ return JSON.parse(localStorage.getItem('cart')||'[]'); }catch(e){ return []; } }
+            function saveCart(c){ localStorage.setItem('cart', JSON.stringify(c)); }
+            function updateCartCount(){ const count = getCart().reduce((s,i)=>s+(i.qty||1),0); const el = document.getElementById('cartCount'); if(el) el.textContent = count; }
+
+            // helper: animate image flying to cart and pulse the cart badge
+            function animateToCart(imgEl, onComplete){
+                try{
+                    const cartLink = document.getElementById('cartLink');
+                    if(!imgEl || !cartLink){ if(onComplete) onComplete(); return; }
+                    const imgRect = imgEl.getBoundingClientRect();
+                    const cartRect = cartLink.getBoundingClientRect();
+                    const clone = imgEl.cloneNode(true);
+                    clone.classList.add('fly-img-clone');
+                    clone.style.width = imgRect.width + 'px';
+                    clone.style.height = imgRect.height + 'px';
+                    clone.style.left = imgRect.left + 'px';
+                    clone.style.top = imgRect.top + 'px';
+                    document.body.appendChild(clone);
+                    // force reflow
+                    clone.getBoundingClientRect();
+                    const dx = (cartRect.left + cartRect.width/2) - (imgRect.left + imgRect.width/2);
+                    const dy = (cartRect.top + cartRect.height/2) - (imgRect.top + imgRect.height/2);
+                    clone.style.transform = `translate(${dx}px, ${dy}px) scale(0.18)`;
+                    clone.style.opacity = '0.6';
+                    clone.addEventListener('transitionend', function(){
+                        clone.remove();
+                        if(onComplete) onComplete();
+                    }, { once:true });
+                }catch(e){ if(onComplete) onComplete(); }
+            }
+
+            function pulseCartBadge(){
+                const el = document.getElementById('cartCount');
+                if(!el) return;
+                el.classList.add('cart-pulse');
+                setTimeout(()=>el.classList.remove('cart-pulse'),600);
+            }
+
+            // handle add to cart with animation (prevent duplicate entries)
+            products.forEach(p=>{
+                const btn = p.querySelector('.cart-btn');
+                if(!btn) return;
+                btn.addEventListener('click', function(){
+                    const card = this.closest('.product');
+                    const id = card.dataset.id;
+                    const title = card.querySelector('h3')?.textContent?.trim() || '';
+                    const price = parseInt(card.dataset.price||0,10) || 0;
+                    const img = card.querySelector('img') || null;
+                    let cart = getCart();
+                    const idx = cart.findIndex(x=>x.id===id);
+                    if(idx === -1){
+                        cart.push({ id, title, price, img: card.dataset.img || '', qty: 1 });
+                        // animate then save
+                        animateToCart(img, ()=>{
+                            saveCart(cart);
+                            updateCartCount();
+                            pulseCartBadge();
+                        });
+                    } else {
+                        // item already in cart: give feedback but do not add again
+                        pulseCartBadge();
+                        // small non-blocking message
+                        const prev = document.createElement('div');
+                        prev.textContent = 'Produk sudah ada di keranjang';
+                        prev.style.position = 'fixed'; prev.style.right = '20px'; prev.style.bottom = '20px'; prev.style.background = '#222'; prev.style.color = '#fff'; prev.style.padding = '10px 14px'; prev.style.borderRadius = '8px'; prev.style.zIndex = 9999; prev.style.opacity = '0.95';
+                        document.body.appendChild(prev);
+                        setTimeout(()=> prev.remove(), 1600);
+                    }
+                    // quick button feedback
+                    btn.classList.add('added'); setTimeout(()=>btn.classList.remove('added'),400);
+                });
+            });
+
+            // initialize cart count on load
+            updateCartCount();
+
+            // view favorites: if user clicks 'Favorit' nav link, they'll open favorites.html; we just ensure buttons reflect saved state
+            refreshFavButtons();
+        })();
+    </script>
+</body>
+</html>
